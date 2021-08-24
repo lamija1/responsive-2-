@@ -1,0 +1,108 @@
+:root {
+    --clr-primary-300: 	#FFFF00;
+    --clr-primary-400: #7cfc00;
+
+    --clr-netural-100: #fafad2;
+    --clr-netural-200: 	#ffe4b5;
+
+    --ff-primary: 'Anson' , sans-serif;
+    --ff-accent: 'Playfair Display' , serif;
+
+}
+
+::before
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 1.3125;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0
+}
+
+h1,
+h2,
+h3 {color: var(--clr-primary-400) 
+    font-family: var(var--ff-accent)
+font-weight: 900;
+line-height: 1;
+margin-bottom: 1em; } 
+
+
+h2,
+h3,
+p {
+    margin-bottom: 1em;
+}
+
+img {
+    display: block;
+    max-width: 100% ;
+}
+
+.text-center {
+    text-align: center;
+}
+header,
+section {
+    padding: 3rem 0;
+}
+
+@media (min-width: 40em) {
+    header,
+    section {
+        padding: 5rem 0;
+    }
+}
+
+.middle {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+.ispodmiddle {
+    max-width: 34rem;
+}
+
+@media (min-width: 40rem) {
+    .split {
+        flex-direction: row;
+    }
+}
+
+.split >* {
+    flex-basis: 100%
+}
+
+.split > * + * {
+    margin-left: 2em;
+}
+
+.bg-white {
+    background-color: var(--clr-netural-200);
+}
+.bg-dark {
+    background-color: var(--clr-primary-300);
+}
+.bg-middle {
+    background-color: var(--clr-primary-400);
+}
+
+.bg-white h2,
+.bg-dark h2 {
+    color: var(--clr-primary-400)
+}
